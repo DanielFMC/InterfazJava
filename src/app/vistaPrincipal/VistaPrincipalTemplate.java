@@ -23,6 +23,7 @@ public class VistaPrincipalTemplate extends JFrame {
 
     public VistaPrincipalTemplate() {
         super("Vista Principal");
+        
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1200, 700);
         this.setLocationRelativeTo(null);

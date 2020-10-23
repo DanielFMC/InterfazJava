@@ -6,6 +6,7 @@
 package app;
 
 import app.vistaPrincipal.VistaPrincipalTemplate;
+import app.login.LoginTemplate;
 import javax.swing.SwingUtilities;
 
 /**
@@ -21,7 +22,8 @@ public class App {
         Runnable runApplication = new Runnable() {
             @Override
             public void run() {
-                VistaPrincipalTemplate vista = new VistaPrincipalTemplate();
+                LoginTemplate login = new LoginTemplate();
+//                VistaPrincipalTemplate vista = new VistaPrincipalTemplate();
             }
         };
         SwingUtilities.invokeLater(runApplication);
