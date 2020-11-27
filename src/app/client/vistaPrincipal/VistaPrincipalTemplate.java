@@ -11,6 +11,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+import app.services.ObjGraficosService;
+import app.services.RecursosService;
+
 /**
  *
  * @author DanielFMC
@@ -21,22 +24,23 @@ public class VistaPrincipalTemplate extends JFrame {
     private JTextField tombre;
     private JLabel lNombre;
 
-    public VistaPrincipalTemplate() {
+    // Declaración de servicios
+    private final ObjGraficosService sObjGraficos;
+    private final RecursosService sRecursos;
+    private VistaPrincipalComponent vpComponent;
+
+    public VistaPrincipalTemplate(VistaPrincipalComponent vpc) {
         super("Vista Principal");
-        
+        sObjGraficos = ObjGraficosService.getService();
+        sRecursos = RecursosService.getService();
+        this.vpComponent = vpc;
+
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1200, 700);
         this.setLocationRelativeTo(null);
-//        this.setUndecorated(true);
-        this.getContentPane().setBackground(Color.red);
+        this.setUndecorated(true);
         this.setLayout(null);
         this.setVisible(true);
-        this.saludar();
-    }
-
-    private void saludar() {
-        String mensaje = "Hola mundo!";
-        System.out.println(mensaje);
     }
 
 }
