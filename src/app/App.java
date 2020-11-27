@@ -5,9 +5,8 @@
  */
 package app;
 
-//import app.client.vistaPrincipal.VistaPrincipalTemplate;
-import app.client.login.LoginTemplate;
-//import javax.swing.SwingUtilities;
+import app.client.login.LoginComponent;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -19,14 +18,13 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        Runnable runApplication = new Runnable() {
-//            @Override
-//            public void run() {
-                LoginTemplate login = new LoginTemplate();
-////                VistaPrincipalTemplate vista = new VistaPrincipalTemplate();
-//            }
-//        };
-//        SwingUtilities.invokeLater(runApplication);
+        Runnable runApplication = new Runnable() {
+            @Override
+            public void run() {
+                LoginComponent login = new LoginComponent();
+            }
+        };
+        SwingUtilities.invokeLater(runApplication);
     }
 
 }

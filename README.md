@@ -14,7 +14,7 @@ El objetivo del proyecto es replicar la interfaz de Home de Youtube en el lengua
     En este apartado se van a mostrar los adelantos realizados progresivamente en el proyecto.
 </h3>
 
-Se añadieron estilos e imagenes de manera que la interfaz de inicio de sesión se vea mejor esteticamente. Lastimosamente, las imagenes pierden la calidad al ser añadidas a los paneles correspondientes.
+Se añadieron estilos e imagenes de manera que la interfaz de inicio de sesión se vea mejor esteticamente.
 
 Más adelante se harán mejoras.
 
