@@ -29,6 +29,11 @@ public class VistaPrincipalTemplate extends JFrame {
     private final RecursosService sRecursos;
     private VistaPrincipalComponent vpComponent;
 
+    // Declaración de servicios
+    private final ObjGraficosService sObjGraficos;
+    private final RecursosService sRecursos;
+    private VistaPrincipalComponent vpComponent;
+
     public VistaPrincipalTemplate(VistaPrincipalComponent vpc) {
         super("Vista Principal");
         sObjGraficos = ObjGraficosService.getService();
